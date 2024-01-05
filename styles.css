@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ button, a {
     top: 0;
     left: 0;
     width: 100%;
-    /* add background image to header and make it black */
+    
     background-image: url("assets/specials-2.jpg");
     background-color: #27252266;
     background-position: top;
@@ -27,19 +29,9 @@ button, a {
     color: #fff;
     z-index: -1;
     height: 100vh;
-    animation: bounce 1s infinite;
+   
 }
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
+
 
 @keyframes pulse {
     0%, 100% {
@@ -78,16 +70,9 @@ button, a {
     position: fixed;
     top: 0;
     width: 100%;
-    animation: slideUp 1s ease-out;
+   
 }
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
+
 
 .navbar-logo > a {
     text-decoration: none;
@@ -184,6 +169,8 @@ button, a {
 .navbar-cta-button:hover {
     background-color: #fff;
     color: #272522;
+    animation: pulse 1s infinite;
+
 }
 
 .header-content {
@@ -227,6 +214,8 @@ button, a {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    animation: pulse 1s infinite;
+
 }
 
 .header-button {
@@ -556,7 +545,7 @@ button, a {
     margin-bottom: 1rem;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    
+    animation: pulse 1s infinite;
 }
 
 /* .section-title h2 {
@@ -582,6 +571,8 @@ button, a {
 
 .box:hover {
     transform: translateY(-10px);
+    animation: pulse 1s infinite;
+
 }
 
 .box span {
@@ -589,7 +580,7 @@ button, a {
     color: #FEA534;
     display: block;
     margin-bottom: 10px;
-    /* font-family: 'Pacifico', cursive; */
+
 }
 
 .box h4 {
@@ -597,13 +588,13 @@ button, a {
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
-    /* font-family: 'Pacifico', cursive; */
+    
 }
 
 .box p {
     font-size: 16px;
     color: #6c757d;
-    /* font-family: 'Pacifico', cursive; */
+    
 }
 
 .container1 {
@@ -641,7 +632,7 @@ button, a {
 #why-us p{
     text-align: center;
     margin-bottom: 2rem;
-    /* font-family: 'Pacifico', cursive; */
+   
 }
 
 @media screen and (max-width: 767px) {
@@ -726,10 +717,14 @@ button, a {
     .box {
         padding: 20px;
     }
-    /* Add more responsive layout styles as needed */
+    .section-title-why-us {
+        font-size: 2rem;
+    }
+    
+    
 }
 
-/* Responsive layout for even smaller screens */
+
 @media screen and (max-width: 767px) {
     .navbar-links > ul > li {
         margin: 0.3rem 0;
@@ -775,9 +770,9 @@ button, a {
     .box {
         padding: 15px;
     }
-    /* Add more responsive layout styles as needed */
+
 }
-/* Default styles for all screen sizes */
+
 * {
     margin: 0;
     padding: 0;
@@ -786,7 +781,7 @@ button, a {
     transition: all 0.3s ease-in-out;
 }
 
-/* Responsive typography */
+
 @media screen and (max-width: 767px) {
     .header-title {
         font-size: 2rem;
@@ -795,10 +790,10 @@ button, a {
         font-size: 1rem;
         max-width: 100%;
     }
-    /* Add more responsive typography styles as needed */
+   
 }
 
-/* Responsive layout for smaller screens */
+
 @media screen and (max-width: 767px) {
     .section-content {
         flex-direction: column;
@@ -933,10 +928,10 @@ button, a {
     .form-textarea {
         width: 100%;
     }
-    /* Add more responsive layout styles as needed */
+   
 }
 
-/* Responsive layout for even smaller screens */
+
 @media screen and (max-width: 767px) {
     .navbar-links > ul > li {
         margin: 0.3rem 0;
@@ -982,9 +977,9 @@ button, a {
     .box {
         padding: 15px;
     }
-    /* Add more responsive layout styles as needed */
+   
 }
-/* Responsive layout for even smaller screens */
+
 @media screen and (max-width: 767px) {
     .navbar {
         padding: 0.8rem;
@@ -1046,10 +1041,10 @@ button, a {
     .box {
         padding: 10px;
     }
-    /* Add more responsive layout styles as needed */
+    
 }
 
-/* Additional tweaks for mobile devices */
+
 @media screen and (max-width: 320px) {
     .navbar-links {
         font-size: 0.8rem;
@@ -1085,7 +1080,7 @@ button, a {
     .box {
         padding: 8px;
     }
-    /* Add more tweaks for smaller mobile devices */
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -1096,19 +1091,14 @@ button, a {
         font-size: 1rem;
         max-width: 100%;
     }
-    
 }
-
-
 @media screen and (max-width: 767px) {
     .section-content {
         flex-direction: column;
         gap: 1rem;
     }
-   
 }
 
-/* Responsive layout for even smaller screens */
 @media screen and (max-width: 320px) {
     .navbar-links {
         font-size: 0.8rem;
