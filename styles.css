@@ -240,21 +240,9 @@ button, a {
     width: 100%;
     background-color: #272522;
     color: #fff;
-    padding: 0rem;
-    animation: swing 2s infinite;
-  
+    padding: 0rem;  
 }
-@keyframes swing {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
+
 
 .footer-title {
     font-family: 'Pacifico', cursive;
@@ -548,7 +536,7 @@ button, a {
     animation: pulse 1s infinite;
 }
 
-/* .section-title h2 {
+ .section-title h2 {
     text-align: center;
     padding: 1rem;
 
@@ -635,7 +623,7 @@ button, a {
    
 }
 
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .section-content {
         flex-direction: column;
         gap: 1rem;
@@ -860,7 +848,7 @@ button, a {
     }
    
 }
-/* Responsive layout for smaller screens */
+
 @media screen and (max-width: 767px) {
     .navbar-links > ul > li {
         margin: 0.5rem 0;
@@ -1104,5 +1092,122 @@ button, a {
         font-size: 0.8rem;
     }
   
-}
+} 
 
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-navbar-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  @media(max-width: 768px){
+    .mobile-navbar-logo{
+        display: block;
+        
+    }
+    .navbar-links{
+        display: none;
+    }
+    .navbar-mobile {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+      }
+  }
+  @media (max-width: 992px){
+    .header-button{
+        margin:0 15px 0 0;
+        padding: 8px 20px;
+    }
+    .navbar-mobile a,
+    .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #1a1814;
+    }
+
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+    color: #cda45e;
+    }
+    .navbar-mobile .getstarted,
+    .navbar-mobile .getstarted:focus {
+    margin: 15px;
+}
+  }
+  @media(max-width: 992px){
+    .header-content{
+        padding-top: 98px;
+    }
+  }
+  @media(min-width: 1366px){
+        .header-content{
+    background-attachment: fixed;
+    }
+  }
+  @media (max-width: 992px) {
+    .header-content .header-button {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    .header-content {
+      height: auto;
+    }
+  
+    .header-content{
+      padding-top: 130px;
+      padding-bottom: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 35px;
+      line-height: 36px;
+      text-align: center;
+    }
+  
+    .header-content p {
+        padding: 1rem;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section alternate-background {
+      background-attachment: fixed;
+    }
+  }
+ 
