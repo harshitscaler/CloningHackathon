@@ -549,18 +549,17 @@ button, a {
 
 .box {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Pacifico', cursive;
 }
 
 .box:hover {
     transform: translateY(-10px);
-    animation: pulse 1s infinite;
-
+   
 }
 
 .box span {
@@ -582,12 +581,6 @@ button, a {
 .box p {
     font-size: 16px;
     color: #6c757d;
-    
-}
-
-.container1 {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .row {
@@ -702,9 +695,9 @@ button, a {
     .why-us {
         padding: 4rem 0;
     }
-    .box {
+    /* .box {
         padding: 20px;
-    }
+    } */
     .section-title-why-us {
         font-size: 2rem;
     }
@@ -755,9 +748,9 @@ button, a {
     .section-title-why-us {
         font-size: 1.8rem;
     }
-    .box {
+    /* .box {
         padding: 15px;
-    }
+    } */
 
 }
 
@@ -903,9 +896,10 @@ button, a {
     .why-us {
         padding: 4rem 0;
     }
-    .box {
+    /* .box {
         padding: 20px;
-    }
+      
+    } */
     .section-title-why-us {
         font-size: 2rem;
     }
@@ -962,9 +956,9 @@ button, a {
     .section-title-why-us {
         font-size: 1.8rem;
     }
-    .box {
+    /* .box {
         padding: 15px;
-    }
+    } */
    
 }
 
@@ -1026,9 +1020,9 @@ button, a {
     .section-title-why-us {
         font-size: 1.5rem;
     }
-    .box {
+    /* .box {
         padding: 10px;
-    }
+    } */
     
 }
 
@@ -1065,15 +1059,16 @@ button, a {
     .section-title-why-us {
         font-size: 1.2rem;
     }
-    .box {
+    /* .box {
         padding: 8px;
-    }
+    } */
   
 }
 
 @media screen and (max-width: 767px) {
     .header-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        
     }
     .header-description {
         font-size: 1rem;
@@ -1098,7 +1093,7 @@ button, a {
 
 
 
- */
+ 
 
 
 
@@ -1210,4 +1205,38 @@ button, a {
       background-attachment: fixed;
     }
   }
- 
+ @media (max-width: 780px){
+    .box{
+        background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Pacifico', cursive;
+    }
+ }
+ @media (min-width: 780px){
+    .box{
+        background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Pacifico', cursive;
+    }
+ }
+ @media (max-width: 768px) {
+    .box .d-flex {
+      display: block !important;
+    }
+  
+    .box span {
+      display: block;
+    }
+  
+    .box h p {
+      display: inline-block;
+    }
+  }
